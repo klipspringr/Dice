@@ -1,4 +1,4 @@
-int totalNumDice, amountOfDice;
+int totalNumDice, amountOfDice, redColor, greenColor, blueColor;
 
 void setup()
 {
@@ -56,9 +56,11 @@ class Die //models one single dice cube
 	}
 	void show()
 	{
-		fill(255);
 		rect(myX, myY, 10,10, 10);
-		fill(150);
+		redColor = (int)(Math.random()*256);
+		greenColor = (int)(Math.random()*256);
+		blueColor = (int)(Math.random()*256);
+		fill(redColor, greenColor, blueColor);
 		if (numOfDots == 1 || numOfDots == 3 || numOfDots == 5)//center dot
 		{
 			ellipse(myX + 5, myY + 5, 1, 1);
