@@ -8,7 +8,7 @@ void setup()
 void draw()
 {
 	background(100);
-	for(int startY = 0; startY <= 800; startY +=10)
+	for(int startY = 0; startY <= 900; startY +=10)
 	{
 		for(int startX = 0; startX <= 1000; startX +=10)
 		{
